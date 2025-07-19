@@ -1,0 +1,46 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<br/>
+
+What's your name:
+
+<input @bind="name" />
+
+<button @onclick="() => name = string.Empty">Clear</button>
+
+<p>@name</p>
+
+<br/>
+
+<ul>
+    @foreach (var item in items) {
+        <li>@item.Name</li>
+    }
+</ul>
+
+<Counter IncrementAmount="10" />
+@code {
+    string name = "";
+
+    void ClearName()
+    {
+        name = string.Empty;
+    }
+
+    public class Person
+    {
+        public string Name { get; set; }
+        public Person(string name)
+        {
+            Name = name;
+        }
+    }
+
+    public Person[] items = new Person[] { new Person("Nicole") };
+}
