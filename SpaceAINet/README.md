@@ -1,22 +1,24 @@
-# Space.AI.NET()
+# Space-AI-NET
 
-A modular, flicker-free console Space Invaders-style game built with C# and .NET 9.0.
+A modular, flicker-free console Space Invaders-style game built with C# and .NET 9.0, featuring AI integration capabilities and cross-platform screenshot functionality.
 
 ## Features
 
 - **Double-buffered rendering** - Smooth, flicker-free graphics using character-level diff updates
 - **Unicode box-drawing characters** - Beautiful game boundary using proper Unicode characters (┌ ┐ └ ┘ ─ │)
-- **Modular architecture** - Clean separation of concerns across multiple classes
-- **Screenshot capture** - Automatic and manual screenshot functionality with proper font rendering
+- **Multi-project architecture** - Clean separation of concerns across multiple projects
+- **Cross-platform screenshots** - HTML and text-based screenshot capture without graphics dependencies
+- **AI integration ready** - Framework for Ollama and Azure AI Foundry integration
 - **Multiple game speeds** - Choose from Slow, Medium, or Fast gameplay
-- **Collision detection** - Player and enemy bullet interactions
-- **Enemy AI** - Enemies move in formation and shoot strategically
+- **Enhanced positioning** - Enemies at the top, player at the bottom for maximum separation
+- **Unlimited bullet range** - Bullets travel the full screen distance
+- **Victory conditions** - Proper win/lose states with colored victory screens
 
 ## Game Controls
 
 - **←** Move Left
 - **→** Move Right
-- **SPACE** Shoot (up to 3 bullets at once)
+- **SPACE** Shoot (unlimited range, up to 3 bullets at once)
 - **S** Take Screenshot
 - **Q** Quit Game
 
@@ -24,13 +26,14 @@ A modular, flicker-free console Space Invaders-style game built with C# and .NET
 
 ### Player
 - Rendered as 'A' in cyan color
-- Moves left and right in the lower area of the screen
-- Can fire up to 3 bullets simultaneously
+- Positioned at the bottom of the screen for maximum separation from enemies
+- Can fire up to 3 bullets simultaneously with unlimited range
 
 ### Enemies
-- **Top Row (5 enemies)**: `><`, `oo`, `><`, `oo`, `><` in red
-- **Bottom Row (3 enemies)**: `/O\` in dark yellow
+- **Top Row (5 enemies)**: `><`, `oo`, `><`, `oo`, `><` in red - positioned at Y=0 (very top)
+- **Bottom Row (3 enemies)**: `/O\` in dark yellow - positioned at Y=2 (still near top)
 - Move in sweep formation, changing direction when hitting boundaries
+- Move down when reaching screen edges - game over if they reach the bottom
 - Only bottom row enemies can shoot
 
 ### Bullets
@@ -38,30 +41,53 @@ A modular, flicker-free console Space Invaders-style game built with C# and .NET
 - **Enemy bullets**: `v` moving downward
 - Collision detection with appropriate targets
 
-## Architecture
+### Win/Lose Conditions
+- **Victory**: Defeat all enemies - shows green "VICTORY!" message
+- **Defeat**: Get hit by enemy bullet or let enemies reach the bottom - shows red "GAME OVER" message
 
-The game follows a modular design with the following components:
+## Project Architecture
 
-- **Program.cs** - Entry point and game initialization
-- **StartScreen.cs** - Welcome screen and instructions
-- **GameManager.cs** - Main game loop and state management
-- **Player.cs** - Player entity and controls
-- **Enemy.cs** - Enemy entities and AI
-- **Bullet.cs** - Bullet physics and collision
-- **RenderState.cs** - Double-buffered rendering system
-- **ScreenshotService.cs** - Screenshot capture functionality
+The game follows a multi-project solution architecture:
+
+```
+SpaceAINet/
+├── SpaceAINet.sln                     # Solution file
+├── README.md                          # This file
+└── src/                               # Source code
+    ├── SpaceAINet.Console/            # Main game executable
+    │   ├── Program.cs                 # Entry point
+    │   ├── StartScreen.cs             # Welcome screen
+    │   ├── GameManager.cs             # Game loop and state
+    │   ├── Player.cs                  # Player entity
+    │   ├── Enemy.cs                   # Enemy entities
+    │   ├── Bullet.cs                  # Bullet physics
+    │   └── appsettings.json           # AI configuration
+    ├── SpaceAINet.Screenshot/         # Cross-platform screenshots
+    │   ├── ScreenshotService.cs       # HTML/text screenshot capture
+    │   └── RenderState.cs             # Double-buffered rendering
+    ├── SpaceAINet.GameActionProcessor/ # AI integration framework
+    │   ├── IGameActionProcessor.cs    # AI interface
+    │   ├── OllamaGameActionProcessor.cs
+    │   ├── AzureAIGameActionProcessor.cs
+    │   └── Models.cs                  # Game state models
+    └── SpaceAINet.ServiceDefaults/    # Shared configuration
+        └── ServiceCollectionExtensions.cs
+```
 
 ## Technical Requirements
 
 - .NET 9.0 or later
 - Console with UTF-8 support for Unicode characters
-- System.Drawing.Common package for screenshot functionality
+- Cross-platform compatible (Windows, macOS, Linux)
 
 ## Building and Running
 
 ```bash
+# Build the solution
 dotnet build
-dotnet run
+
+# Run the game
+dotnet run --project src/SpaceAINet.Console
 ```
 
 ## Game Speed Options
@@ -75,10 +101,21 @@ Select speed at startup or press ENTER for default.
 ## Screenshots
 
 Screenshots are automatically saved to the `screenshoots` folder:
-- Automatic screenshots every 10 seconds during gameplay
-- Manual screenshots with the 'S' key
-- Saved as PNG files with proper font rendering
+- **Automatic screenshots** every 10 seconds during gameplay
+- **Manual screenshots** with the 'S' key
+- **Cross-platform compatibility** - saved as HTML and text files
+- **No graphics dependencies** - works on all .NET platforms
+
+## AI Integration (Future)
+
+The game includes a framework for AI integration:
+- **Ollama support** - Local AI model integration
+- **Azure AI Foundry** - Cloud AI service integration
+- **Game state analysis** - AI can analyze current game state
+- **Action suggestions** - AI can suggest optimal moves
+
+Configure AI settings in `src/SpaceAINet.Console/appsettings.json`.
 
 ## Platform Compatibility
 
-The game runs on Windows, macOS, and Linux. Screenshot functionality requires platform support for System.Drawing.Common.
+The game runs on **Windows, macOS, and Linux** with full cross-platform compatibility. No platform-specific dependencies required.
