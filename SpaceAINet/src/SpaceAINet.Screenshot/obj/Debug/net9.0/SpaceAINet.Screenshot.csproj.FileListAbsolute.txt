@@ -1,0 +1,12 @@
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/SpaceAINet.Screenshot.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/SpaceAINet.Screenshot.AssemblyInfoInputs.cache
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/SpaceAINet.Screenshot.AssemblyInfo.cs
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/SpaceAINet.Screenshot.csproj.CoreCompileInputs.cache
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/SpaceAINet.Screenshot.sourcelink.json
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/bin/Debug/net9.0/SpaceAINet.Screenshot.deps.json
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/bin/Debug/net9.0/SpaceAINet.Screenshot.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/bin/Debug/net9.0/SpaceAINet.Screenshot.pdb
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/SpaceAINet.Screenshot.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/refint/SpaceAINet.Screenshot.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/SpaceAINet.Screenshot.pdb
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.Screenshot/obj/Debug/net9.0/ref/SpaceAINet.Screenshot.dll

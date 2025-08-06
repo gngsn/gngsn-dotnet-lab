@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "LVHh5PRwDWE=",
+  "success": true,
+  "projectFilePath": "/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/SpaceAINet.ServiceDefaults.csproj",
+  "expectedPackageFiles": [
+    "/Users/gyeongsun/.nuget/packages/microsoft.extensions.configuration/9.0.0/microsoft.extensions.configuration.9.0.0.nupkg.sha512",
+    "/Users/gyeongsun/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
+    "/Users/gyeongsun/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "/Users/gyeongsun/.nuget/packages/microsoft.extensions.primitives/9.0.0/microsoft.extensions.primitives.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

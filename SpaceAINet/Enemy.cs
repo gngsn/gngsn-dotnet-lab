@@ -7,14 +7,14 @@ public class Enemy
     public bool IsAlive { get; set; }
     public int Width { get; private set; }
     public EnemyType Type { get; private set; }
-    
+
     public Enemy(int x, int y, EnemyType type)
     {
         X = x;
         Y = y;
         Type = type;
         IsAlive = true;
-        
+
         switch (type)
         {
             case EnemyType.TopRow1:
@@ -37,7 +37,7 @@ public class Enemy
                 break;
         }
     }
-    
+
     public void Render(RenderState renderState, int offsetX, int offsetY)
     {
         if (IsAlive)
@@ -48,12 +48,12 @@ public class Enemy
             }
         }
     }
-    
+
     public bool CanShoot()
     {
         return IsAlive && Type == EnemyType.BottomRow; // Only bottom row enemies can shoot
     }
-    
+
     public Bullet? CreateBullet()
     {
         if (CanShoot())

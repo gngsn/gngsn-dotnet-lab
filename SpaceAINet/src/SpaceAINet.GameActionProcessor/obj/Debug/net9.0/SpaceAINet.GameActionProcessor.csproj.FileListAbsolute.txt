@@ -1,0 +1,16 @@
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/bin/Debug/net9.0/SpaceAINet.GameActionProcessor.deps.json
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/bin/Debug/net9.0/SpaceAINet.GameActionProcessor.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/bin/Debug/net9.0/SpaceAINet.GameActionProcessor.pdb
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/bin/Debug/net9.0/SpaceAINet.ServiceDefaults.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/bin/Debug/net9.0/SpaceAINet.ServiceDefaults.pdb
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAINet.GameActionProcessor.csproj.AssemblyReference.cache
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAINet.GameActionProcessor.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAINet.GameActionProcessor.AssemblyInfoInputs.cache
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAINet.GameActionProcessor.AssemblyInfo.cs
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAINet.GameActionProcessor.csproj.CoreCompileInputs.cache
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAINet.GameActionProcessor.sourcelink.json
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAIN.6B9B6D07.Up2Date
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAINet.GameActionProcessor.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/refint/SpaceAINet.GameActionProcessor.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/SpaceAINet.GameActionProcessor.pdb
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.GameActionProcessor/obj/Debug/net9.0/ref/SpaceAINet.GameActionProcessor.dll

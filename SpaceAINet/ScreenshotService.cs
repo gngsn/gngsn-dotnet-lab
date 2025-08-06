@@ -5,7 +5,7 @@ public static class ScreenshotService
 {
     private static string screenshotFolder = "screenshoots";
     private static int screenshotCounter = 0;
-    
+
     public static void Initialize()
     {
         // Create and clear screenshot folder
@@ -16,7 +16,7 @@ public static class ScreenshotService
         Directory.CreateDirectory(screenshotFolder);
         screenshotCounter = 0;
     }
-    
+
     public static void CaptureScreenshot(RenderState renderState)
     {
         try
@@ -33,17 +33,17 @@ public static class ScreenshotService
             int fontSize = 12;
             int charWidth = 7;
             int charHeight = 14;
-            
+
             // Create bitmap
             int bitmapWidth = renderState.Width * charWidth;
             int bitmapHeight = renderState.Height * charHeight;
-            
+
             using (var bitmap = new Bitmap(bitmapWidth, bitmapHeight))
             using (var graphics = Graphics.FromImage(bitmap))
             {
                 // Set background to black
                 graphics.Clear(System.Drawing.Color.Black);
-                
+
                 // Try to use Consolas font, fallback to monospace
                 Font font;
                 try
@@ -54,7 +54,7 @@ public static class ScreenshotService
                 {
                     font = new Font(FontFamily.GenericMonospace, fontSize, FontStyle.Regular);
                 }
-                
+
                 // Render each character
                 for (int y = 0; y < renderState.Height; y++)
                 {
@@ -62,24 +62,24 @@ public static class ScreenshotService
                     {
                         char ch = renderState.CurrentCharBuffer[y, x];
                         ConsoleColor consoleColor = renderState.CurrentColorBuffer[y, x];
-                        
+
                         if (ch != ' ')
                         {
                             System.Drawing.Color drawColor = ConvertConsoleColor(consoleColor);
                             using (var brush = new SolidBrush(drawColor))
                             {
-                                graphics.DrawString(ch.ToString(), font, brush, 
+                                graphics.DrawString(ch.ToString(), font, brush,
                                     x * charWidth, y * charHeight);
                             }
                         }
                     }
                 }
-                
+
                 font.Dispose();
-                
+
                 // Save screenshot
                 screenshotCounter++;
-                string filename = Path.Combine(screenshotFolder, 
+                string filename = Path.Combine(screenshotFolder,
                     $"screenshot_{screenshotCounter:D4}.png");
                 bitmap.Save(filename, ImageFormat.Png);
             }
@@ -90,7 +90,7 @@ public static class ScreenshotService
             Console.WriteLine($"Screenshot error: {ex.Message}");
         }
     }
-    
+
     private static System.Drawing.Color ConvertConsoleColor(ConsoleColor consoleColor)
     {
         return consoleColor switch

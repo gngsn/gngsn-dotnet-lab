@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../SpaceAINet.Screenshot/SpaceAINet.Screenshot.csproj" />
+    <ProjectReference Include="../SpaceAINet.GameActionProcessor/SpaceAINet.GameActionProcessor.csproj" />
+    <ProjectReference Include="../SpaceAINet.ServiceDefaults/SpaceAINet.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>

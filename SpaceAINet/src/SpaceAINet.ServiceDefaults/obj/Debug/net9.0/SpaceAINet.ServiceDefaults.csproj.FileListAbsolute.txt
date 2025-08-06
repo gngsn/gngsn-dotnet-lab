@@ -1,0 +1,13 @@
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/bin/Debug/net9.0/SpaceAINet.ServiceDefaults.deps.json
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/bin/Debug/net9.0/SpaceAINet.ServiceDefaults.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/bin/Debug/net9.0/SpaceAINet.ServiceDefaults.pdb
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/SpaceAINet.ServiceDefaults.csproj.AssemblyReference.cache
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/SpaceAINet.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/SpaceAINet.ServiceDefaults.AssemblyInfoInputs.cache
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/SpaceAINet.ServiceDefaults.AssemblyInfo.cs
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/SpaceAINet.ServiceDefaults.csproj.CoreCompileInputs.cache
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/SpaceAINet.ServiceDefaults.sourcelink.json
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/SpaceAINet.ServiceDefaults.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/refint/SpaceAINet.ServiceDefaults.dll
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/SpaceAINet.ServiceDefaults.pdb
+/Users/gyeongsun/git/gngsn-dotnet-lab/SpaceAINet/src/SpaceAINet.ServiceDefaults/obj/Debug/net9.0/ref/SpaceAINet.ServiceDefaults.dll

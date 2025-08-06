@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpaceAINet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f68f02f37f5b3f6375213a6c61ce73dea8af760")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bfc9321385947d3b6452ff8ef892f81162414e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpaceAINet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpaceAINet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
